@@ -27,8 +27,8 @@
 						required>
 				</div>
 				<div class="input-box">
-					<span class="details">Phone Number</span> <input type="tel"
-						name="ownerPhoneNumber" pattern="[0-9]{10}"
+					<span class="details">Phone Number</span> <input type="text"
+						name="userName" pattern="[0-9]{10}"
 						placeholder="Enter the contact number" required>
 				</div>
 				<div class="input-box">
