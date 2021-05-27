@@ -21,15 +21,15 @@
                     <div class="CustomerLoginForm">
                         <h3>LogIn</h3>
                         <div class="theme-card">
-                            <form action="/account/login" method="POST">
+                            <form action="userValidation" method="POST">
                                 <div class="form-group">
                                     <label for="tel">Mobile no.</label>
-                                    <input type="tel" name="customer[tel]" placeholder="Mobile number"
-                                        id="CustomerMobile" value="+91" pattern="+91-[0-9]{12}" class="form-control">
+                                    <input type="text" name="userName" placeholder="Mobile number"
+                                        id="CustomerMobile"  pattern="[0-9]{10}" class="form-control">
                                 </div>
                                 <div class="form-group">
                                     <label for="review">Password</label>
-                                    <input type="password" name="customer[password]" placeholder="Password"
+                                    <input type="password" name="password" placeholder="Password"
                                         class="form-control" id="CustomerPassword" autocapitalize="off">
                                 </div>
                                 <button type="submit" class="btn btn-solid">Login</button>

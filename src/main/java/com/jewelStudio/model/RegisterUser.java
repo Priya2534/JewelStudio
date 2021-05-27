@@ -2,15 +2,17 @@ package com.jewelStudio.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 @Entity
 public class RegisterUser {
     private String ownerFirstName;
     private String ownerLastName;
-   
     private String ownerBusinessName;
-    @Id  @Column(length = 10)
-    private String ownerPhoneNumber;
+    
+    @Id 
+    private String userName;
     private String password;
 	private String confirmPassword;
 	public String getOwnerFirstName() {
@@ -31,11 +33,11 @@ public class RegisterUser {
 	public void setOwnerBusinessName(String ownerBusinessName) {
 		this.ownerBusinessName = ownerBusinessName;
 	}
-	public String getOwnerPhoneNumber() {
-		return ownerPhoneNumber;
+	public String getUserName() {
+		return userName;
 	}
-	public void setOwnerPhoneNumber(String ownerPhoneNumber) {
-		this.ownerPhoneNumber = ownerPhoneNumber;
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 	public String getPassword() {
 		return password;
@@ -52,9 +54,11 @@ public class RegisterUser {
 	@Override
 	public String toString() {
 		return "RegisterUser [ownerFirstName=" + ownerFirstName + ", ownerLastName=" + ownerLastName
-				+ ", ownerBusinessName=" + ownerBusinessName + ", ownerPhoneNumber=" + ownerPhoneNumber + ", password="
-				+ password + ", confirmPassword=" + confirmPassword + "]";
+				+ ", ownerBusinessName=" + ownerBusinessName + ", userName=" + userName + ", password=" + password
+				+ ", confirmPassword=" + confirmPassword + "]";
 	}
+	
+	
 	
 	
 }
