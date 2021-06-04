@@ -1,102 +1,71 @@
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins',sans-serif;
+    font-family: serif;   
 }
-
-body{
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background-color: antiquewhite;
-    padding: 10px;
+.register{
+    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+    margin-top: 3%;
+    padding: 3%;
 }
-.container{
-    max-width: 700px;
-    width: 100%;
-    background-color: #fff;
-    padding: 15px 30px;
-    border-radius: 5px;
-
-}
-.container .title{
-    font-size: 25px;
-    font-weight: 500;
-    position: relative;
-}
-.container form .user-details{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 20px 0 12px 0;
-}
-form .user-details .input-box{
-    margin-bottom: 15px;
-    width: calc(100% / 2 - 20px);
-
-}
-
-.user-details .input-box .details{
-    font-weight: 500;
-    margin-bottom: 5px;
-    display: block;
-}
-.user-details .input-box input{
-    height: 45px;
-    width: 100%;
-    outline: none;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    padding-left: 15px;
-    font-size: 16px;
-    border-bottom-width: 2px;
-    transition: all 0.3s ease ;
-
-}
-.user-details .input-box input:focus,
-.user-details .input-box input:valid{
-border-color: antiquewhite;
-}
-form .button{
-    height: 45px;
-    margin: 45px 0;
-}
-form .button input{
-    height: 100%;
-    width: 100%;
-    outline: none;
+.regi-left{
+    text-align: center;
     color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    background-color: #e58c8a ;
-    
+    margin-top: 10%;
+}
+.regi-right{
+    background: #b0d2f5;
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%;
+}
+.regi-right h3{
+    text-align: center;
+    margin: 2% 0 2% 0;
+    font-size: 2.2rem;
+    color: #0062cc;
+}
+img{
+    animation: rotate-center 4s linear infinite both;
 }
 
-@media (max-width: 584px){
-    .container{
-        max-width: 100%;
+@keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
     }
-    form .user-details .input-box{
-        margin-bottom: 15px;
-        width: 100%;
-    
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
     }
-    .container form .user-details{
-       max-height: 300px;
-       overflow-y: scroll;
-    }
-    .user-details::-webkit-scrollbar{
-        width: 0%;
-    }
-    
-
-
 }
-.message{
-    color: blue;
-    }
-
-
+.register .regi-form{
+    padding: 1.9rem;
+}
+.btnRegister{
+    float: right;
+    margin:5% 0;
+    border: none;
+    color: #0062cc;
+    border-radius: 1.5rem;
+    padding: 2%;
+    font-weight: 600;
+    width: 35%;
+    cursor: pointer;
+    background: linear-gradient(to left, #0063cc80 50%, rgb(255, 255, 255) 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    transition: all .5s ease-out;
+}
+.btnRegister:hover {
+    background-position: right bottom;
+    color: #fff;
+}
+input{
+    border: none !important;
+    outline: none !important;
+}
+ input[type=number]::-webkit-inner-spin-button, 
+ input[type=number]::-webkit-outer-spin-button :hover{ 
+    -webkit-appearance: none; 
+}
