@@ -234,6 +234,185 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+    
+    
+    
+     <!-----    ------------------------------------Card Section Priyanka---------->
+    <section class="card-container">
+       <div class="card"  >
+        <div class="card-image card-1"> </div>
+        <h2>Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis quis numquam praesentium sit ducimus nam voluptatum vitae natus vero! Exercitationem ipsum laudantium nemo quae at fuga odit molestiae consectetur ad!</p>
+        <a href="#">Read More</a>
+    </div>
+    <div class="card">
+        <div class="card-image card-2" >  </div>
+        <h2>Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis quis numquam praesentium sit ducimus nam voluptatum vitae natus vero! Exercitationem ipsum laudantium nemo quae at fuga odit molestiae consectetur ad!</p>
+        <a href="#">Read More</a>
+    </div>
+    <div class="card">
+        <div class="card-image card-3" ></div>
+        <h2>Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis quis numquam praesentium sit ducimus nam voluptatum vitae natus vero! Exercitationem ipsum laudantium nemo quae at fuga odit molestiae consectetur ad!</p>
+        <a href="#">Read More</a>
+    </div>
+  
+
+    </section>
+    
+    
+    
+    
+    
+     <!------------------------------Footer Section Prashant --------------->
+    <section class="Footer-cover">
+        <div class="container">
+            <div class="subscribe-area">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="subscribe-content">
+                            <h2 class="subscribe-title">
+                               Subscribe Our NewsLetter
+                               <p>Get Regular Updates</p>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" name="email" placeholder="Enter email">
+                                <button class="main-btn">Subscribe</button>
+                            </form>
+    
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+ <footer id="footer" class="footer-area">
+    <div class="container">
+        
+        <div class="footer-widget">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-8">
+                    <div class="footer-about">
+                        
+                        <a class="logo"href="#">
+                            <img src="logo.jpg" alt="logo">
+                            <span>JEWELSTUDIO</span>
+                            
+                        </a>
+                        <p class="text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat odit libero excepturi odio molestiae harum, consectetur laborum inventore a quis iste voluptatibus. Ipsum repellendus, cumque voluptate quas possimus magnam ipsa.
+                        </p>
+                        <ul class="social">
+                            <li>
+                                <a href="#"><i class="fa fa-google" aria-hidden="true"></i></a>                
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    
+                    </div>
+                    
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-8">
+                    
+                    <div class="footer-quicklink">
+                       
+                          <div class="footer-title">
+                            <h4 class="title">Quick Link</h4>
+                          </div>
+                         <ul class="link">
+                            <li>
+                                <a href="#">Road Map</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Refund Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms Of Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Pricing</a>
+                            </li>
+                         </ul>
+                    </div>
+             </div>
+                 
+             <div class="col-lg-3 col-md-6 col-sm-8">
+                 <div class="footer-resources">
+                    <div class="footer-title">
+                        <h4 class="title">Resources</h4>
+                      </div>
+                     <ul class="link">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Page</a>
+                        </li>
+                        <li>
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                     </ul>
+                 </div>
+             </div>
+             <div class="col-lg-3 col-md-6 col-sm-8">
+                <div class="footer-contact">
+                   <div class="footer-title">
+                       <h4 class="title">Contact Us</h4>
+                     </div>
+                    <ul class="link">
+                       <li>
+                           <a href="#">+809272561823</a>
+                       </li>
+                       <li>
+                           <a href="#">info@gmail.com</a>
+                       </li>
+                       <li>
+                           <a href="#">www.yourweb.com</a>
+                       </li>
+                       <li>
+                           <a href="#">123 Street New York City , United
+                            States Of America 750.</a>
+                       </li>
+                       
+                    </ul>
+                </div>
+            </div>
+            
+         </div>
+      </div>
+ </div>
+<div class="footer-line">
+    <p class="text">
+        Designed And Developed By..
+         </p>
+</div>
+
+</footer>
+    
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
