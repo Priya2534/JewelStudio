@@ -187,3 +187,201 @@ a:hover{
 }
 
 
+/*    Card css Priyanka */
+
+.card-container{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: nowrap;
+    padding: 80px;
+
+}
+body{
+    background-color:cadetblue
+}
+.card{
+    background-color: aliceblue;
+    width: 280px;
+    border-radius: 15px;
+}
+.card-image{
+
+    height: 150px;
+    margin-bottom: 10px;
+    background-size: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+.card-1{
+    background-image: url('/images/cards/img1.png');
+}
+.card-2{
+    background-image: url('/images/cards/img2.png');
+}
+.card-3{
+    background-image: url('/images/cards/img3.jpg');
+}
+.card p{
+    text-align: center;
+    padding: 10px;
+    
+}
+.card a{
+    display: block;
+    text-align: center;
+    background-color: black;
+    padding: 15px 20px;
+    color: white;
+    margin: 20px 50px;
+}
+.card:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+    transition: ease 1s ease;
+    box-shadow:0px 0px 5px 2px blue;
+}
+.card-container .card h2{
+    text-align: center;
+}
+
+
+
+
+/*  Footer Style prashant */
+
+
+.Footer-cover .container{
+    display: flex;
+}
+
+
+.footer-area {
+    background-position: top center;
+    position: relative;
+    z-index: 5;
+}
+
+ .footer-area{
+    /* display: flex; */
+    height:100vh;
+    background-image: radial-gradient( circle farthest-corner at 12.3% 19.3%,  rgba(85,88,218,1) 0%, rgba(95,209,249,1) 100.2% );
+    justify-content: center;
+    align-items: center;
+} 
+.footer-about .logo span{
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    
+}
+.footer-line p{
+    margin-top: 10px;
+    color: white;
+    text-align: justify;
+}
+.logo img{
+    width: 30px;
+    height: 30px;
+}
+ .social li {
+    display: inline-block;
+    list-style: none;
+    padding: 10px; 
+    
+}
+.social li a {
+font-size: 20px;
+}
+.subscribe-area {
+    padding: 20px 25px 45px;
+    box-shadow: 0 0 18px 0 rgb(50 77 215 / 14%);
+    border-radius: 10px;
+    background-color: #fff;
+}
+.subscribe-area{
+    background-color: whitesmoke
+}
+.subscribe-area .row {
+    
+    display: flex;
+    
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    
+}
+.subscribe-area  p{
+   color: gray;
+}
+.footer-about .social {
+    margin-top: 40px;
+}
+.social li a{
+    color: white;
+}
+.social  li a i{
+    size: 40px;
+}
+
+.footer-title .title h4{
+    color: white;
+}
+.link a{
+    color: white;
+}
+.link li{
+    list-style: none;
+}
+.link li {
+padding: 10px;
+}
+.footer-title .title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+ .subscribe-content h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+.footer-widget{
+    margin-top: 60px;
+}
+.subscribe-form button {
+    position: relative;
+    
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 4px 15px;
+    background-color:green;
+    color: ivory;
+    
+    
+}
+form {
+    display: block;
+    
+}
+
+.subscribe-form input {
+    border: 2px solid #e1e1e1;
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 5px;
+    width: 70%;
+    color: #2e2e2e;
+}
+.footer-area hr{
+color: #fff;
+height: 5px;
+}
+.footer-line{
+   
+    border-top: 1px solid #fff;
+}
+.footer-cover .subscribe-area{
+    padding-top: 130px; 
+}
+
+
+
+

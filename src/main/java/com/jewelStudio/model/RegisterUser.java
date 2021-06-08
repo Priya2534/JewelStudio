@@ -1,13 +1,18 @@
 package com.jewelStudio.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+//import javax.persistence.GeneratedValue;
+//import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
 public class RegisterUser {
 	@Id
+//	@GeneratedValue(strategy = GenerationType.IDENTITY)
+//	private int registerId;
 	private String phone;
-
+	 @Column(name = "name") 
 	private String FirstName;
 	private String LastName;
 	private String Password;
