@@ -61,11 +61,35 @@ img{
     background-position: right bottom;
     color: #fff;
 }
-input{
+/* input{
     border: none !important;
     outline: none !important;
-}
+} */
  input[type=number]::-webkit-inner-spin-button, 
  input[type=number]::-webkit-outer-spin-button :hover{ 
     -webkit-appearance: none; 
 }
+
+.form-group{
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+
+
+.form-group i{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    visibility: hidden ;
+}
+.formerror{
+    color: red;
+}
+
+
+
+
+
+

@@ -2,6 +2,7 @@ package com.jewelStudio.controller;
 
 import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -14,7 +15,10 @@ import com.jewelStudio.repo.JewelStudioRepo;
 public class AppController {
 	@Autowired
 	JewelStudioRepo repo;
-
+	
+	@Autowired
+	EmailService emailService;
+	
 	@RequestMapping("/")
 	public ModelAndView loadhomePage() {
 		ModelAndView mv = new ModelAndView();
@@ -34,8 +38,14 @@ public class AppController {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("Home.jsp");
 		repo.save(userInfo);
+		System.out.println("Display email : "+userInfo.getBusinessEmail());
+		String name = userInfo.getFirstName()+" "+userInfo.getLastName();
+		
+		emailService.sendEmailToCustomer(userInfo.getBusinessEmail(), name);
 		return mv;
 	}
+	
+	
 	@RequestMapping("logOut")
 	public ModelAndView logoutPage() {
 		ModelAndView mv = new ModelAndView();
