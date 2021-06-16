@@ -1,6 +1,8 @@
 package com.jewelStudio.controller;
 
 import javax.servlet.http.HttpSession;
+
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.stereotype.Controller;
@@ -15,6 +17,8 @@ import com.jewelStudio.repo.JewelStudioRepo;
 public class AppController {
 	@Autowired
 	JewelStudioRepo repo;
+	
+	private static Logger log = Logger.getLogger(AppController.class);
 	
 	@Autowired
 	EmailService emailService;
@@ -38,7 +42,7 @@ public class AppController {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("Home.jsp");
 		repo.save(userInfo);
-		System.out.println("Display email : "+userInfo.getBusinessEmail());
+		log.info("Display email : "+userInfo.getBusinessEmail());
 		String name = userInfo.getFirstName()+" "+userInfo.getLastName();
 		
 		emailService.sendEmailToCustomer(userInfo.getBusinessEmail(), name);
