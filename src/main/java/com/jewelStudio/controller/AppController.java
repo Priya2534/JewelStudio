@@ -12,11 +12,16 @@ import org.springframework.web.servlet.ModelAndView;
 import com.jewelStudio.model.RegisterUser;
 
 import com.jewelStudio.repo.JewelStudioRepo;
+import com.jewelStudio.service.JewelStudioService;
+
 
 @Controller
 public class AppController {
 	@Autowired
 	JewelStudioRepo repo;
+	
+	
+	JewelStudioService jsservice;
 	
 	private static Logger log = Logger.getLogger(AppController.class);
 	
@@ -41,11 +46,15 @@ public class AppController {
 	public ModelAndView registerUser(RegisterUser userInfo) {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("Home.jsp");
-		repo.save(userInfo);
-		log.info("Display email : "+userInfo.getBusinessEmail());
-		String name = userInfo.getFirstName()+" "+userInfo.getLastName();
-		
-		emailService.sendEmailToCustomer(userInfo.getBusinessEmail(), name);
+		RegisterUser userRegistered = jsservice.registerUser(userInfo);
+		String name = userRegistered.getFirstName()+" "+userRegistered.getLastName();
+		emailService.sendEmailToCustomer(userRegistered.getBusinessEmail(), name);
+		return mv;
+	}
+	
+	@RequestMapping("userValidation")
+	public ModelAndView verifyUser(String phone, String Password, HttpSession session) {
+		ModelAndView mv = jsservice.validateUser(phone,Password,session);
 		return mv;
 	}
 	
@@ -57,38 +66,8 @@ public class AppController {
 		return mv;
 	}
 
-	@RequestMapping("userValidation")
-	public ModelAndView verifyUser(String phone, String Password, HttpSession session) {
-		try {
-			ModelAndView mv = new ModelAndView();
-			System.out.println("data for entered username" + phone);
-			RegisterUser userInfo = repo.findByPhone(phone);
-			System.out.println(userInfo);
-			System.out.println("userdetails" + (userInfo.getPhone()));
-			System.out.println("userdetails" + (userInfo.getPassword()));
+	
 
-			if ((userInfo.getPhone()).equals(phone) && (userInfo.getPassword()).equals(Password)) {
-				String message = userInfo.getFirstName();
-				session.setAttribute("phone", phone);
-				mv.addObject("message", message);
-				mv.setViewName("dash.jsp");
-				System.out.println("registpage");
-				return mv;
-			} else {
-				String message = "Please enter correct username and password";
-				mv.addObject("message", message);
-				mv.setViewName("Home.jsp");
-				return mv;
-			}
-
-		} catch (Exception e) {
-			ModelAndView mv = new ModelAndView();
-			String message = "Please enter the correct username and password Exception";
-			mv.addObject("message", message);
-			mv.setViewName("Home.jsp");
-			return mv;
-
-		}
-	}
+	
 
 }
